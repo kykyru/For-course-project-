@@ -322,7 +322,7 @@ public:
 	void const AllAboutNode(int row, int column) {
 
 		Node temp = Find(row, column);
-		cout << "Значення: " << temp << '\t' << "Рядок: " << *temp.row << '\t' << "Колонка: " << *temp.column;
+		cout << "Значення: " << temp << '\t' << "Рядок: " << *temp.row << '\t' << "Стовпчик: " << *temp.column;
 	}
 
 	bool const PrintRow(int number) {
@@ -798,20 +798,20 @@ void main() {
 			switch (choice)
 			{
 			case 1:
-				list.PrintRow(column);
+				list.PrintColumn(column);
 				break;
 
 			case 2:
-				list.ReversePrintRow(column);
+				list.ReversePrintColumn(column);
 				break;
 
 			case 3:
-				if (!list.PushRow(column)) cout << "Список переповненно!";
+				if (!list.PushColumn(column)) cout << "Список переповненно!";
 				else sizecolumn++;
 				break;
 
 			case 4:
-				if (!list.PopRow(column)) cout << "Спискок занадто малий!";
+				if (!list.PopColumn(column)) cout << "Спискок занадто малий!";
 				else sizecolumn--;
 				break;
 
