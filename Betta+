@@ -641,6 +641,7 @@ void ChoicwRowColumn(int& row, int& column, int sizerow, int sizecolumn) {
 	} while (row < 0 || row > sizerow || column < 0 || column > sizecolumn);
 }
 
+
 int main() {
 
 	system("chcp 1251");
